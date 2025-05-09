@@ -8,7 +8,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Security Settings
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'unsafe-secret-key')
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '*').split(',')
+ALLOWED_HOSTS = [host.strip() for host in os.environ.get('ALLOWED_HOSTS', '*').split(',')]
+
 
 # Installed Apps
 INSTALLED_APPS = [
