@@ -1,0 +1,10 @@
+Django>=5.2
+djangorestframework
+djangorestframework-simplejwt
+Pillow               # for image uploads
+django-cors-headers  # for enabling CORS
+python-magic         # optional, for MIME type detection
+gunicorn
+dj-database-url
+whitenoise
+python-decouple
