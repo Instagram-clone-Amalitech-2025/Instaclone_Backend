@@ -8,3 +8,4 @@ gunicorn
 dj-database-url
 whitenoise
 python-decouple
+cryptography>=41.0.0  # or just `cryptography` to always pull the latest
