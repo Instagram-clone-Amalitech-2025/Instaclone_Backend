@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security Settings
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'unsafe-secret-key')
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = [host.strip() for host in os.environ.get('ALLOWED_HOSTS', '*').split(',')]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -129,7 +129,7 @@ SOCIAL_AUTH_FACEBOOK_SECRET = 'Your Facebook Client Secret>'
 # Configure Django Allauth
 AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
-    'social_core.backends.apple.AppleOAuth2',  # Add Apple OAuth2 backend
+    #'social_core.backends.apple.AppleOAuth2',  # Add Apple OAuth2 backend
     'django.contrib.auth.backends.ModelBackend',
     'social_core.backends.google.GoogleOAuth2',
     'social_core.backends.facebook.FacebookOAuth2',
