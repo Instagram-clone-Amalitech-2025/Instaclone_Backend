@@ -8,7 +8,6 @@ urlpatterns = [
     path('auth/', include('user_account.urls'),),
     #urlpath for post
     path('api/', include('posts.urls')),
-    
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

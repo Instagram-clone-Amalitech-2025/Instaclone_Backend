@@ -5,9 +5,9 @@ from .views import PostViewSet, CommentViewSet
 
 router = DefaultRouter()
 router.register(r'posts', PostViewSet, basename='post')
-router.register(r'comments', CommentViewSet, basename='comment')  # Optional
+router.register(r'comments', CommentViewSet, basename='comment')
 
 urlpatterns = [
     path('', include(router.urls)),
-   # path('posts/', PostView.as_view(), name='posts'),
+    #path('posts/', PostView.as_view(), name='posts'),
 ]
