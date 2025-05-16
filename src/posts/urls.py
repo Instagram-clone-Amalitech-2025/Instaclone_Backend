@@ -9,5 +9,5 @@ router.register(r'comments', CommentViewSet, basename='comment')  # Optional
 
 urlpatterns = [
     path('', include(router.urls)),
-   # path('posts/', PostView.as_view(), name='posts'),
+    #path('posts/', PostView.as_view(), name='posts'),
 ]
