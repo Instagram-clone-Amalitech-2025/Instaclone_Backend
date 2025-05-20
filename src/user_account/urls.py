@@ -17,5 +17,5 @@ urlpatterns = [
     # Allauth URLs for login, registration, etc.
     path('accounts/', include('allauth.urls')),  # Handles allauth URLs for login, registration, etc.
     # Social authentication URLs (Google, Apple, etc.)
-    path('auth/', include('social_django.urls', namespace='social')),  # Handles social login 
+    path('auth/', include('social_django.urls', namespace='social')),  # Handles social login
 ]
