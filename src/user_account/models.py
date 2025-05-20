@@ -5,7 +5,6 @@ from django.utils import timezone
 import datetime
 import random
 
-
 class User(AbstractUser):
     email = models.EmailField(unique=True)
     full_name = models.CharField(max_length=255)
