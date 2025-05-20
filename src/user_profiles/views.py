@@ -59,13 +59,7 @@ class ProfileViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def following(self, request, pk=None):
         profile = self.get_object()
-
-  
         following_users = profile.following.all()
-
-
         following_profiles = Profile.objects.filter(user__in=following_users)
-
-        following_usernames = [p.user.username for p in following_profiles]
-
+        following_usernames = [profile.user.username for profile in following_profiles]
         return Response({"following": following_usernames})
