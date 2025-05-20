@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'social_django',
     'posts',
     'user_account',  # Add back the 'account' app if you have a custom user model
+    'user_profiles',
 ]
 
 
