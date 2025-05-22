@@ -8,7 +8,6 @@ class Profile(models.Model):
     full_name = models.CharField(max_length=100, blank=True)
     bio = models.TextField(max_length=300, blank=True)
     website = models.URLField(blank=True)
-    is_private = models.BooleanField(default=False)
     followers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='followed_by', blank=True)
     following = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='follows', blank=True)
     last_active = models.DateTimeField(null=True, blank=True)  
