@@ -1,8 +1,7 @@
 from django.contrib import admin
-from .models import User
+from Instaclone_Backend.src.account.models import User
 
 admin.site.register(User)
 
 
 # Register your models here.
-
