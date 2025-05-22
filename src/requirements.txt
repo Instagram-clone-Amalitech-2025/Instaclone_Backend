@@ -10,3 +10,4 @@ whitenoise
 python-decouple
 cryptography>=41.0.0  # or just `cryptography` to always pull the latest
 django-allauth
+social-allauth-app-django==5.4.0
