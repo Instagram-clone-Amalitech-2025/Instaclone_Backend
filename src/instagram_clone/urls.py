@@ -8,7 +8,8 @@ urlpatterns = [
     path('auth/', include('account.urls'),),
     #urlpath for post
     path('posts/', include('posts.urls')),
-    
+    #urlpath for feed   
+    path('feed/', include('feed.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

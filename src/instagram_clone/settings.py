@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'account',
     'posts',
+    'feed'
 ]
 
 # REST Framework JWT
